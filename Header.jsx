@@ -2,7 +2,13 @@ import React from 'react';
 import styles from'./style.css';
 
 export class Header extends React.Component {
-
+    constructor() {
+      super();
+      console.log('From Header Constructor')
+      console.log(this.state)
+      this.state = {fromHeader: true};
+      console.log(this.state)
+    }
     render() {
         // console.log(styles)
         const x = 5;
